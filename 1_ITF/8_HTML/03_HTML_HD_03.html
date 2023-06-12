@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>03_HTML_HD_03</title>
+</head>
+<body>
+<h3 style="color: orangered;">03_HTML_HD_03</h3>
+<p>HTML 3. DERS NOTUMDUR</p>
+<hr>
+<b style="color: darkblue;">---------------HTML Ders Tekrarı Olmuştur---------------</b>
+<br>
+<b style="color: darkblue;">İşlenen Konular</b>
+		<ol>
+			<li>HTML List</li>
+			<li>HTML Table</li>
+			<li>HTML Images</li>
+			<li>HTML Links</li>
+		</ol>
+<hr>
+<b style="color: darkblue;">These are HTML List Types</b>
+	<ol reversed="yes">
+		<li>Ordered List Elements</li>
+			<ol reversed="yes" type="a">
+				<li>reversed (reversed="yes / no")</li>
+				<li>start (start counting)</li>
+				<li>type (lower, upper, roman, number...)</li>
+			</ol>
+		<li>Unordered List Elements</li>
+			<ul type="circle">
+				<li>circle</li>
+				<li>square</li>
+				<li>disc</li>
+			</ul>
+		<li>Description List Elements, (dl, dt, dd)</li>
+			<dl>
+				<dt>dl</dt>
+					<dd>Description List</dd>
+				<dt>dt</dt>	
+					<dd>Description Term</dd>
+				<dt>dd</dt>	
+					<dd>Description Definition</dd>
+			</dl>
+		</ol>
+<hr>
+<b style="color: darkblue;">Basic Definitions</b>
+		<ol>
+			<li>TR: Table Row</li>
+			<li>TH: Table Header</li>
+			<li>TD: Table Data</li>
+			<li>colspan="2": Spanning Column</li>
+			<li>rowspan="2": Spanning Row</li>
+			<li>align="center": Aligning</li>
+		</ol>
+<b style="color: darkblue;">---------------Table With Colspan---------------</b>
+<br>
+<br>
+	<table border="4">
+		<tr align="Center">
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th colspan="2">Phone Number</th>
+		</tr>
+		<tr>
+			<td>Engin</td>
+			<td>ABDAN</td>
+			<td>09998887766</td>
+			<td>09996667788</td>
+		</tr>
+		<tr>
+			<td>Azra</td>
+			<td>ABDAN</td>
+			<td>08887776655</td>
+			<td>05556667788</td>
+		</tr>
+		<tr>
+			<td>Neda</td>
+			<td>ABDAN</td>
+			<td>07776665544</td>
+			<td>04445556677</td>
+		</tr>
+		<tr>
+			<td>Aden</td>
+			<td>ABDAN</td>
+			<td>06665554433</td>
+			<td>03334445566</td>
+		</tr>
+	</table>
+<br>
+<b style="color: darkblue;">---------------Table With Rowspan---------------</b>
+<br>
+<br>
+	<table border="4">
+		<tr align="left">
+			<th>First Name</th><td>Engin</td>
+		</tr>
+		<tr align="left">
+			<th>Last Name</th><td>ABDAN</td>		
+		</tr>
+		<tr align="left">
+			<th rowspan="2">Mobile Number</th><td>0123</td>
+		</tr>
+		<tr>
+			<td>0321</td>
+		</tr>
+	</table>
+<br>
+<hr>
+<b style="color: darkblue;">---------------Image From Local Source---------------</b>
+<br>
+	<p><img src="D:\1_Engin\1_Google_Drive\1_IT_Courses\1_Github_Mine\01_ITF\08_HTML\01_HD\Autumn&Home.jfif" alt="Autumn&Home" width="190" height="250" border="5"></p>
+<hr>
+<b style="color: darkblue;">---------------HTML Links---------------</b>
+<br>
+<br>
+<b style="color: darkblue;">---------------Image As s Link---------------</b>
+<br>
+<br>
+<a href="https://www.google.com" target="blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRRrCL7KBb1aoDXhOzOlwsOeI3EJG-0ojcAg&usqp=CAU" alt="Autumn&Home" width="190" height="250" border="5"></a>
+<br>
+<br>
+<b style="color: darkblue;">---------------Link to an E-mail Address---------------</b>
+<br>
+<br>
+<a href="mailto:engin.abdan@gmail.com">Send E-mail</a>
+<br>
+<br>
+<b style="color: darkblue;">---------------Button As s Link---------------</b>
+<br>
+<button onclick="document.location='https://www.google.com'">Google</button>
+<br>
+<br>
+<b style="color: darkblue;">---------------Link Titles---------------</b>
+<br>
+<a href="https://www.google.com" title="Go to Google">Try to Search on Google</a>
+<br>
+<br>
+</body>
+</html>

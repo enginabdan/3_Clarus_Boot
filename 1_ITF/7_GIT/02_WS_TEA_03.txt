@@ -1,0 +1,876 @@
+
+engin@DESKTOP-9299PUK MINGW64 ~
+$ pwd
+/c/Users/engin
+
+engin@DESKTOP-9299PUK MINGW64 ~
+$ cd De
+bash: cd: De: No such file or directory
+
+engin@DESKTOP-9299PUK MINGW64 ~
+$ cd Desktop/
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop
+$ mkdir my-github
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop
+$ cd my-github/
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github
+$ mkdir git-workshop
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github
+$ cd git-workshop/
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop
+$ git config --global user.name "engin"
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop
+$ git config --global user.email "engincaliskan1982@gmail.com"
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=engin
+user.email=engincaliskan1982@gmail.com
+init.defaultbranch=main
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop
+$ git init
+Initialized empty Git repository in C:/Users/engin/Desktop/my-github/git-workshop/.git/
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ ls a
+ls: cannot access 'a': No such file or directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ ls -a
+./  ../  .git/
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git remote -v
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git remote -v
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git remote -v git remote -v
+error: Unknown subcommand: git
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git remote add origin ^C
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git remote add origin git remote -v
+error: unknown switch `v'
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git remote add origin https://github.com/C8278-Engin/git-workshop.git
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git remote -v
+origin  https://github.com/C8278-Engin/git-workshop.git (fetch)
+origin  https://github.com/C8278-Engin/git-workshop.git (push)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ cat "Hakan abi ile çalışmamız" >> file1.txt
+cat: 'Hakan abi ile çalışmamız': No such file or directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ cat file1.txt > Hakan abi ile çalışmamız
+cat: abi: No such file or directory
+cat: ile: No such file or directory
+cat: çalışmamız: No such file or directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ echo Hakan abi ile çalışmamız > file1.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ cat file1.txt
+Hakan abi ile çalışmamız
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ echo 30 Mart 2021 tarihli çalışmamız >> file1.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ cat file1.txt
+Hakan abi ile çalışmamız
+30 Mart 2021 tarihli çalışmamız
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Hakan
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ ls
+Hakan  file1.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ rm Hakan
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ ls
+file1.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git rm --cached file1.txt
+rm 'file1.txt'
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ touch file2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ ls
+file1.txt  file2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+        file2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+        new file:   file2.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git checkout
+fatal: You are on a branch yet to be born
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git commit -m "Bu sürümde şunöları değiştirdik."
+[main (root-commit) 1630151] Bu sürümde şunöları değiştirdik.
+ 2 files changed, 2 insertions(+)
+ create mode 100644 file1.txt
+ create mode 100644 file2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git rm --cached
+fatal: No pathspec was given. Which files should I remove?
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git rm --cached file1.txt
+rm 'file1.txt'
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file1.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git rm --cached file2.txt
+rm 'file2.txt'
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file1.txt
+        deleted:    file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+        file2.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git log
+commit 16301517a661478679f762e1f5f169e1a72118fe (HEAD -> main)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 00:52:26 2021 +0300
+
+    Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git commit -m "En son hali"
+On branch main
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ ls
+file1.txt  file2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git add .
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git log
+commit 16301517a661478679f762e1f5f169e1a72118fe (HEAD -> main)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 00:52:26 2021 +0300
+
+    Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git checkout
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop (main)
+$ git checkout 1630151
+Note: switching to '1630151'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1630151 Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ ls
+file1.txt  file2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ cat file1.txt
+Hakan abi ile çalışmamız
+30 Mart 2021 tarihli çalışmamız
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ cat file2
+cat: file2: No such file or directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ echo En son mesajımdır >> file1.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ cat file1.txt
+Hakan abi ile çalışmamız
+30 Mart 2021 tarihli çalışmamız
+En son mesajımdır
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ git add .
+warning: LF will be replaced by CRLF in file1.txt.
+The file will have its original line endings in your working directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ git commit -m "Üçüncü satırı ekledik"
+[detached HEAD 5abd4bf] Üçüncü satırı ekledik
+ 1 file changed, 1 insertion(+)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git checkout
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git status
+HEAD detached from 1630151
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git log
+commit 5abd4bfd08a5da62a96811a3abec47fec20e46f0 (HEAD)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 01:04:06 2021 +0300
+
+    Üçüncü satırı ekledik
+
+commit 16301517a661478679f762e1f5f169e1a72118fe (main)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 00:52:26 2021 +0300
+
+    Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git checkout 163015
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  5abd4bf Üçüncü satırı ekledik
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 5abd4bf
+
+HEAD is now at 1630151 Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ cat file1.txt
+Hakan abi ile çalışmamız
+30 Mart 2021 tarihli çalışmamız
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((1630151...))
+$ git checkout 5abd4b
+Previous HEAD position was 1630151 Bu sürümde şunöları değiştirdik.
+HEAD is now at 5abd4bf Üçüncü satırı ekledik
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ cat file1.txt
+Hakan abi ile çalışmamız
+30 Mart 2021 tarihli çalışmamız
+En son mesajımdır
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ echo file2ye eklediğimiz veriler > file2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ cat file2.txt
+file2ye eklediğimiz veriler
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git log
+commit 5abd4bfd08a5da62a96811a3abec47fec20e46f0 (HEAD)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 01:04:06 2021 +0300
+
+    Üçüncü satırı ekledik
+
+commit 16301517a661478679f762e1f5f169e1a72118fe (main)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 00:52:26 2021 +0300
+
+    Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git rm --cached file2.txt
+rm 'file2.txt'
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git status
+HEAD detached at 5abd4bf
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ cat file2.txt
+file2ye eklediğimiz veriler
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git log
+commit 5abd4bfd08a5da62a96811a3abec47fec20e46f0 (HEAD)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 01:04:06 2021 +0300
+
+    Üçüncü satırı ekledik
+
+commit 16301517a661478679f762e1f5f169e1a72118fe (main)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 00:52:26 2021 +0300
+
+    Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git status
+HEAD detached at 5abd4bf
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    file2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git add .
+warning: LF will be replaced by CRLF in file2.txt.
+The file will have its original line endings in your working directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git status
+HEAD detached at 5abd4bf
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   file2.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((5abd4bf...))
+$ git commit -m "01:18 saati"
+[detached HEAD 670ce5d] 01:18 saati
+ 1 file changed, 1 insertion(+)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git log
+commit 670ce5d0f63a8312aa91094ef26e2d0ff621f93a (HEAD)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 01:18:06 2021 +0300
+
+    01:18 saati
+
+commit 5abd4bfd08a5da62a96811a3abec47fec20e46f0
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 01:04:06 2021 +0300
+
+    Üçüncü satırı ekledik
+
+commit 16301517a661478679f762e1f5f169e1a72118fe (main)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 00:52:26 2021 +0300
+
+    Bu sürümde şunöları değiştirdik.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git clone https://github.com/C8278-Engin/git-workshop.git
+Cloning into 'git-workshop'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git push main
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push main HEAD:<name-of-remote-branch>
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git push -u main
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push main HEAD:<name-of-remote-branch>
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git push -f main
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push main HEAD:<name-of-remote-branch>
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git push -f origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 332 bytes | 332.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/C8278-Engin/git-workshop.git
+ + ac06e80...1630151 main -> main (forced update)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git clone
+fatal: You must specify a repository to clone.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git clone https://github.com/C8278-Engin/git-workshop.git
+fatal: destination path 'git-workshop' already exists and is not an empty directory.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ git clone https://github.com/C8278-Engin/git-workshop-1.git
+Cloning into 'git-workshop-1'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ pwd
+/c/Users/engin/Desktop/my-github/git-workshop
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ ls
+file1.txt  file2.txt  git-workshop/  git-workshop-1/
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop ((670ce5d...))
+$ cd git-workshop-1
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ ls
+README.md
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ ls -a
+./  ../  .git/  README.md
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ touch test1.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git add .
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test1.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git commit -m "Lokaldeki en son storumuz"
+[main 254e24f] Lokaldeki en son storumuz
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ vim
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ ls
+README.md  test1.txt  test2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ cat test2.txt
+wkjgghjghjgg
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git add .
+warning: LF will be replaced by CRLF in test2.txt.
+The file will have its original line endings in your working directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   test2.txt
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git restore --staged test2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git add .
+warning: LF will be replaced by CRLF in test2.txt.
+The file will have its original line endings in your working directory
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git commit -m
+error: switch `m' requires a value
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git commit -m "bittik"
+[main c215b71] bittik
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git log
+commit c215b71515be61286fcc1819eac59f3d8412754c (HEAD -> main)
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 01:47:48 2021 +0300
+
+    bittik
+
+commit 254e24f42dd50189cdecda688c8dfe1e57e6b7ed
+Author: engin <engincaliskan1982@gmail.com>
+Date:   Wed Mar 31 01:32:50 2021 +0300
+
+    Lokaldeki en son storumuz
+
+commit 270ab8fc3557c112b365fc4fe1b8f1a45789cd70 (origin/main, origin/HEAD)
+Author: Engin ÇALIŞKAN <80221044+C8278-Engin@users.noreply.github.com>
+Date:   Wed Mar 31 01:27:44 2021 +0300
+
+    Initial commit
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 (main)
+$ git checkout c215b
+Note: switching to 'c215b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at c215b71 bittik
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 ((c215b71...))
+$ ls
+README.md  test1.txt  test2.txt
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 ((c215b71...))
+$ git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 ((c215b71...))
+$ git push -f origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 498 bytes | 498.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/C8278-Engin/git-workshop-1.git
+   270ab8f..c215b71  main -> main
+
+engin@DESKTOP-9299PUK MINGW64 ~/Desktop/my-github/git-workshop/git-workshop-1 ((c215b71...))
+$

@@ -1,0 +1,78 @@
+  635  cd
+  636  pwd
+  637  mkdir CLARUSMOTORS
+  638  ls
+  639  cd CLARUSMOTORS/
+  640  ls -l
+  641  mkdir GROUND SEA AIR
+  642  ls
+  643  cd GROUND/
+  644  ls -al
+  645  mkdir Highway Railway
+  646  ls
+  647  cd ../SEA/
+  648  pwd
+  649  ls -al
+  650  cd ../AIR
+  651  pwd
+  652  ls -al
+  653  cd ../GROUND/Highway/
+  654  pwd
+  655  ls -l
+  656  touch car motorbike bicycle
+  657  ls -l
+  658  echo "GROUND_vehicle 2.0 TDI" > car 
+  659  cat car
+  660  echo "GROUND_vehicle 0.9 SI" > motorbike
+  661  echo "GROUND_vehicle Feet" > bicycle
+  662  ls -l
+  663  history
+  664  touch amphibicar
+  665  vi amphibicar 
+  666  vi amphibicar
+  667  explorer.exe .
+  668  history
+  669  tree
+  670  cd ~/CLARUSMOTORS/
+  671  tree
+  672  cd GROUND/Highway/
+  673  chmod 660 amphibicar 
+  674  ls -l
+  675  nano clarusvehicle
+  676  ls
+  677  nano clarusvehicle 
+  678  cat clarusvehicle 
+  679  chmod 640 clarusvehicle 
+  680  ls -l
+  681  cd ../Railway/
+  682  pwdd
+  683  pwd
+  684  touch bullet_train electric_train steam_train
+  685  ls -l
+  686  cd ../../SEA
+  687  LS
+  688  ls
+  689  echo "SEA_vehicle-4250 HP" > ship
+  690  vi seaplane
+  691  ls
+  692  cp ../GROUND/Highway/amphibicar .
+  693  ls
+  694  cp ../GROUND/Highway/clarusvehicle .
+  695  ll
+  696  cd ../AIR/
+  697  ls
+  698  pwd
+  699  touch plane helicopter
+  700  ls
+  701  echo "AIR_vehicle 2000HP" > plane 
+  702  cat plane 
+  703  cp ../GROUND/Highway/clarusvehicle .
+  704  cp ../SEA/seaplane .
+  705  ls
+  706  cd ..
+  707  pwd
+  708  sudo apt update
+  709  tree
+  710  history
+  711  clear
+  712  history > history.txt

@@ -1,0 +1,49 @@
+3. DÖNEM DERSLER VE İÇERİKLERİ
+
+1. Machine Learning
+   a. Supervised Learning
+	1. Linear Regression
+	2. Lasso, Ridge, ElesticNet,
+	3. GridSerachCV, Polynomial, CV, Bias-Var Trade Off, Scaling
+	4. Linear & Log Error Metrics
+	5. Logistic Regression
+	6. KNN
+	7. SVM
+	8. Decision Tree
+	9. Random Forest
+	10. AdaBoosting
+	11. Gradient Boosting
+	12. XG Boosting
+	13. Light GBM
+   b. Supervised Learning
+	1. K Means Clustering
+	2. Hierarchical Clustering (Dendogram)
+	3. Principal Component Analysis  
+
+2. Deep Learning
+   a. Tensorflow
+   b. Keras
+   c. CNN (Convolutional Neurol Network)
+   d. RNN (Recurrent Neural Network)
+
+3. Natural language processing
+   a. nltk - Wordcloud - gensim - yellowbrick
+   b. Tokenization - Noise Removal - Lexicon Normalization
+   c. Stopwords
+   d. Lemmatization
+   e. Stemming
+   f. TF-IDF
+   g. Vectorization
+   h. Naive Bayes
+   i. Machine Learning Models
+   j. Word Embedding - Word2Vec, Glove
+   k. Optimizer
+   l. Sentiment Analysis
+
+4. Machine Learning Deployment
+   a. AWS - IAM - EC2
+   b. Streamlit
+   c. Flask
+   d. Ngrok
+   e. Tmux
+   f. Docker
